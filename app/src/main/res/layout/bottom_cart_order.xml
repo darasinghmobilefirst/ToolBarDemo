@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F4F6FB"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:paddingTop="@dimen/space_05"
+        android:paddingBottom="@dimen/space_05"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/ll_cart"
+            android:background="@drawable/cart_background"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_cart"
+                android:padding="@dimen/space_10"
+                android:tint="@color/brand_blue"
+                android:src="@drawable/vg_outline_shopping_cart_24"
+                android:layout_width="48dp"
+                android:layout_height="48dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_view_price_details_main"
+            android:paddingLeft="@dimen/space_05"
+            android:paddingRight="@dimen/space_05"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_gravity="center"
+                    android:id="@+id/txt_price"
+                    android:textColor="@color/black"
+                    android:text="₹999"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_gravity="center"
+                    android:paddingStart="@dimen/space_05"
+                    android:id="@+id/txt_price_old"
+                    android:textColor="@color/gray"
+                    android:text="₹1999"
+                    android:background="@drawable/strike_through"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/space_05"
+                    android:id="@+id/ll_off"
+                    android:background="@drawable/next_background"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/space_05">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_percentage"
+                        android:textColor="@color/white"
+                        android:text="18%"
+                        android:textSize="@dimen/text_size_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:paddingStart="@dimen/space_03"
+                        android:id="@+id/txt_off"
+                        android:textColor="@color/white"
+                        android:text="OFF"
+                        android:textSize="@dimen/text_size_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_view_price_details"
+                android:layout_marginTop="@dimen/space_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_view_price_details"
+                    android:textColor="@color/brand_blue"
+                    android:text="@string/view_price_details"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_down"
+                    android:tint="@color/brand_blue"
+                    android:src="@drawable/vg_baseline_keyboard_arrow_down_24"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_next"
+            android:background="@drawable/next_background"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_10">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_next"
+                android:textColor="@color/white"
+                android:text="@string/continue_title"
+                android:textSize="@dimen/text_size_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_next"
+                android:tint="@color/white"
+                android:src="@drawable/vg_baseline_keyboard_arrow_right_24"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

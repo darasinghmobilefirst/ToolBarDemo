@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ToolbarDemo</string>
+
+    <string name="text_label_1">Text 1</string>
+    <string name="text_label_2">Text 2</string>
+    <string name="text_label_3">Text 3</string>
+    <string name="continue_title">Continue</string>
+    <string name="view_price_details">View price details</string>
+</resources>
